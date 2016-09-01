@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">一元种宝</string>
+    <string name="action_settings">设置</string>
+    <string name="category">商品分类</string>
+    <string name="charge">充值</string>
+    <string name="loot">夺宝</string>
+    <string name="new_announce">最新揭晓</string>
+    <string name="list">晒单</string>
+    <string name="rank_list">排行榜</string>
+    <string name="me">个人中心</string>
+    <string name="search"></string>
+    <string name="iphone_ipad">手机平板</string>
+    <string name="computer_work">电脑办公</string>
+    <string name="classic_car">经典名车</string>
+    <string name="all_product">全部商品</string>
+    <string name="digital_video">影音数码</string>
+    <string name="domestic_appliance">家用电器</string>
+    <string name="brand_watch">名牌手表</string>
+    <string name="game_toy">游戏玩具</string>
+    <string name="snack_beverage">零食饮料</string>
+    <string name="other">其他宝贝</string>
+    <string name="new_result">最新揭晓</string>
+    <string name="display_all">显示全部</string>
+
+    <string name="newest">最新</string>
+    <string name="popularity">人气</string>
+    <string name="requirement">总需</string>
+    <string name="overplus">剩余</string>
+    <string name="add_to_shopping_cart">加入清单</string>
+    <string name="drawing_progress">开奖进度50%</string>
+    <string name="charge_explanation">说明: 充值数额购买相对应的空间，我们将赠送相对应的金豆，金豆可用于种宝活动。</string>
+</resources>

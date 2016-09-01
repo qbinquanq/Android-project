@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/top_toolbar"/>
+    </android.support.design.widget.AppBarLayout>
+   <LinearLayout
+       android:id="@+id/winning_messages_linearlayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <ImageView
+           android:layout_margin="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/trophy"/>
+       <LinearLayout
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:textColor="@android:color/black"
+               android:layout_marginStart="10dp"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Winning Messages"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_marginStart="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="no messages"/>
+       </LinearLayout>
+   </LinearLayout>
+
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e2e2"/>
+    <LinearLayout
+        android:id="@+id/sending_messages_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_messages"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sending Messages"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no messages"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e2e2"/>
+    <LinearLayout
+        android:id="@+id/client_messages_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/client_services"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Client Messages"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no messages"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e2e2"/>
+    <LinearLayout
+        android:id="@+id/system_messages_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/system_messages"/>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="System Messages"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no messages"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e2e2"/>
+
+</LinearLayout>

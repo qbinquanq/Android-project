@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ShopMall</string>
+    <string name="action_settings">Setting</string>
+    <string name="category">Category</string>
+    <string name="charge">Charge</string>
+
+    <string name="loot">Loot</string>
+    <string name="new_announce">New</string>
+    <string name="list">List</string>
+    <string name="rank_list">Rank</string>
+    <string name="me">Me</string>
+    <string name="search">Search</string>
+    <string name="iphone_ipad">iPhone iPad</string>
+    <string name="computer_work">Office Work</string>
+    <string name="classic_car">Classic Cars</string>
+    <string name="all_product">All Products</string>
+    <string name="digital_video">Digital Video</string>
+    <string name="domestic_appliance">Appliance</string>
+    <string name="brand_watch">Brand Watch</string>
+    <string name="game_toy">Games</string>
+    <string name="snack_beverage">Beverages</string>
+    <string name="other">Others</string>
+    <string name="new_result">New Result</string>
+    <string name="display_all">Display All</string>
+
+    <string name="newest">Newest</string>
+    <string name="popularity">Popularity</string>
+    <string name="requirement">Demand</string>
+    <string name="overplus">Overplus</string>
+    <string name="add_to_shopping_cart">Add to shopping cart</string>
+    <string name="drawing_progress">progress 50%</string>
+    <string name="charge_explanation">Explaination: charge amount can be used to buy more spaces, and we will give gold bean for free. Gold bean can be used in events</string>
+</resources>

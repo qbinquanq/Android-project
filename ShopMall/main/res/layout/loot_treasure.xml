@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<include layout="@layout/bot_toolbar"/>
+<ScrollView android:id="@+id/loot_treasure"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f4f4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Frame anime -->
+            <!--ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/frame"/-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+        <LinearLayout
+
+            android:background="#fbfbfb"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:divider="@drawable/divider_grey"
+            android:showDividers="middle"
+            android:dividerPadding="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="22sp"
+                    android:backgroundTint="#fbf7f7"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
+                    android:text="@string/category"
+                    android:id="@+id/product_category" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/arrow_down_float"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/search"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:focusable="false"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/search_layout"
+                android:imeOptions="actionSearch"
+
+                android:clickable="true"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#fbfbfb"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:paddingTop="12dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="8dp"
+                android:id="@+id/gridview_five_icons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:verticalSpacing="10dp"
+                android:stretchMode="columnWidth">
+            </GridView>
+            <ImageView
+                android:id="@+id/draw_lottery"
+                android:paddingTop="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:src="@drawable/ads"
+                android:scaleType="fitXY"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+            <View
+                android:layout_gravity="start|center"
+                android:layout_width="4dp"
+                android:layout_height="20dp"
+                android:background="#f11a1a"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:gravity="center|start"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/new_result"
+                android:textColor="#494949"/>
+            <TextView
+                android:id="@+id/display_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableEnd="@drawable/right_arrow"
+                android:paddingEnd="6dp"
+                android:text="@string/display_all"/>
+        </LinearLayout>
+
+
+        <com.apptouch.binquanwang.shopmall.CustomGridView
+
+            android:paddingTop="30dp"
+            android:paddingBottom="25dp"
+            android:background="#ffffff"
+            android:id="@+id/second_gridview"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:stretchMode="columnWidth">
+
+        </com.apptouch.binquanwang.shopmall.CustomGridView>
+
+        <android.support.design.widget.TabLayout
+            android:background="#ffffff"
+            android:id="@+id/home_page_tablayout"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorHeight="2dp"
+            >
+
+        </android.support.design.widget.TabLayout>
+
+        <com.apptouch.binquanwang.shopmall.CustomGridView
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="3dp"
+            android:numColumns="2"
+            android:background="#f5f4f4"
+            android:layout_marginTop="2dp"
+            android:id="@+id/home_page_tablayout_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </com.apptouch.binquanwang.shopmall.CustomGridView>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#FF6633"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="start"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <com.apptouch.binquanwang.shopmall.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/portrait"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/holo_red_light"/>
+        <ImageView
+            android:scaleType="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goldbean"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="20"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_light"/>
+        <ImageView
+
+            android:scaleType="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/silverbean"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:divider="@drawable/divider"
+            android:showDividers="middle">
+            <Button
+                android:id="@+id/charge"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FF6633"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:text="@string/charge"
+                android:layout_marginStart="23dp"
+                android:textColor="@android:color/white" />
+            <ImageView
+                android:id="@+id/shopping_cart"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/shoppingcart"/>
+            <ImageView
+                android:id="@+id/messages"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center|end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/messages"
+                android:layout_marginLeft="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

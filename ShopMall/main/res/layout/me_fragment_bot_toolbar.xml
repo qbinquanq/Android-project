@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- not used anymore -->
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#f87d5b">
+
+    </LinearLayout>
+
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:clipChildren="false"
+    android:orientation="horizontal"
+    android:background="#ed6440">
+
+    <LinearLayout
+        android:clipChildren="false"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:clipChildren="false"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clipChildren="false">
+                <com.apptouch.binquanwang.shopmall.CircleImageView
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:id="@+id/portrait"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/portrait"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@android:color/white"
+                    android:alpha="30"/>
+
+            </LinearLayout>
+            <TextView
+                android:padding="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"
+                android:layout_marginEnd="40dp"
+                android:layout_gravity="top"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="LvL 1"
+                android:textColor="#93d584"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:scaleType="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/me_goldbean"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="20"
+                android:layout_gravity="center"
+                android:textColor="@android:color/holo_green_light"/>
+            <ImageView
+
+                android:scaleType="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/me_silverbean"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:paddingStart="5dp"
+
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+
+                android:id="@+id/charge"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="#fefefe"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:text="@string/charge"
+
+                android:textColor="@android:color/holo_red_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

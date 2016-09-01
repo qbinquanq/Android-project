@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.TabLayout android:id="@+id/tablayout"
+    layout:tabIndicatorHeight="0dp"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#f5f4f4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto" />
